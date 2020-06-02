@@ -1,0 +1,40 @@
+$font-family: 'Poppins', sans-serif;
+$color: rgb(99, 0, 99);
+
+body {
+    font-family: $font-family;
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+p {
+    color: $color;
+}
+
+img:not(.avatar) {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.avatar {
+    width: 80%;
+}
+
+
+@media (min-width: 768px) {
+    .avatar {
+        width: 25%;
+    }
+
+    img:not(.avatar) {
+        width: 45%;
+    }
+}

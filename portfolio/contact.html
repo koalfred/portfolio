@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="contact-form.php" method="POST"></form>
+    <label for="toggle" class="hamburger">&#9776;</label>
+    <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+    </nav>
+    <h1>Contact</h1>
+    <div class="contact-intro">
+        <p>Are you interested in working on a project together? Feel free to leave a message!</p>
+        <h4>Note: All information will be kept confidential.</h4>
+    </div>
+        <form action="" class="form">
+            <div class="names">
+                <div class="first-name">
+                    <h3><label for="fname">First Name</label></h3>
+                    <input type="text" id="fname" class="fname" placeholder="Your first name...">
+                </div>
+                <div class="last-name">
+                    <h3><label for="lname">Last Name</label></h3>
+                    <input type="text" id="lname" class="lname" placeholder="Your last name...">
+                </div>
+            </div>
+            <div class="mail-message">
+                <div class="class-email">
+                    <h3><label for="email">E-mail</label></h3>
+                    <input type="text" id="email" class="email" placeholder="Your e-mail address...">
+                </div>
+                <div class="class-message">
+                    <h3><label for="message">Message</label></h3>
+                    <textarea name="message" class="message" id="message" rows="10">Write your message here...</textarea>
+                </div>
+            </div>
+            <input type="submit" class="submit">
+        </form>
+        
+        <div class="footer">
+        <h3>For contact inquiries:</h3>
+        <p>alfred.frontend@gmail.com</p>
+        </div>
+</body>
+</html>

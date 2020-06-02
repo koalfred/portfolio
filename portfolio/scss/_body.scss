@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    padding: 16px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+    
+    body {
+        padding: 24px;
+    }
+}
