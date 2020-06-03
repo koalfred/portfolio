@@ -9,23 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <label for="toggle" class="hamburger">&#9776;</label>
-    <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
-    </nav>
+
+<div class="topnav">
+  <a href="index.html" class="active">ALFRED KO</a>
+  <div id="myLinks" class="myLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="works.html">Works</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="fa"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  
     <h1>Works</h1>
     <div class="left">
+        <div class="side-left">
         <h2>Portfolio</h2>
         <img src="images/placeholder.png" alt="placeholder">
+        </div>
         <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
         <button class="desktop-button modal-button" href="#myModal1">Details</button>
+        <div class="buttons">
         <button class="mobile-button" onclick="window.location.href = '#0';">Link</button>
         <button class="mobile-button modal-button" href="#myModal1">Details</button>
-    </div>
+        </div>
+      </div>
    
     <!-- The Modal -->
     <div id="myModal1" class="modal">
@@ -80,13 +91,21 @@
     
         
     <div class="right">
-        <h2>Capstone Project</h2>
-        <img src="images/placeholder.png" alt="placeholder">
-        <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
-        <button class="desktop-button modal-button" href="#myModal2">Details</button>
+      <div class="buttons-right">
         <button class="mobile-button" onclick="window.location.href = '#0';">Link</button>
         <button class="mobile-button modal-button" href="#myModal2">Details</button>
-    </div>
+        </div>
+      <div class="side-right">
+        <h2>Capstone Project</h2>
+        <img src="images/placeholder.png" alt="placeholder">
+      </div>
+        <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
+        <button class="desktop-button modal-button" href="#myModal2">Details</button>
+        <div class="buttons">
+        <button class="mobile-button" onclick="window.location.href = '#0';">Link</button>
+        <button class="mobile-button modal-button" href="#myModal2">Details</button>
+        </div>
+      </div>
        
     <!-- The Modal -->
     <div id="myModal2" class="modal">
@@ -142,13 +161,17 @@
     </div>
 
     <div class="left">
+      <div class="side-left">
         <h2>React Movie Database Project</h2>
         <img src="images/tmdb.png" alt="tmdb">
+      </div>
         <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
         <button class="desktop-button modal-button" href="#myModal3">Details</button>
+        <div class="buttons">
         <button class="mobile-button">Link</button>
         <button class="mobile-button modal-button" href="#myModal3">Details</button>
     </div>
+   </div>
        
     <!-- The Modal -->
     <div id="myModal3" class="modal">
@@ -189,13 +212,21 @@
     </div>
 
     <div class="right">
+      <div class="buttons-right">
+        <button class="mobile-button" onclick="window.location.href = '#0';">Link</button>
+        <button class="mobile-button modal-button" href="#myModal4">Details</button>
+        </div>
+      <div class="side-right">
         <h2>HTML/CSS Group Project</h2>
         <img src="images/html-css-project.png" alt="html_css_project">
+      </div>
         <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
         <button class="desktop-button modal-button" href="#myModal4">Details</button>
+        <div class="buttons">
         <button class="mobile-button" onclick="window.location.href = 'htmlcss/index.html';">Link</button>
         <button class="mobile-button modal-button" href="#myModal4">Details</button>
-    </div>
+      </div>
+      </div>
 
          
     <!-- The Modal -->
@@ -237,13 +268,17 @@
     </div>
 
     <div class="left">
+      <div class="side-left">
         <h2>Business Brochure</h2>
         <img src="images/business-brochure.png" alt="business_brochure">
+      </div>
         <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
         <button class="desktop-button modal-button" href="#myModal5">Details</button>
+        <div class="buttons">
         <button class="mobile-button">Link</button>
         <button class="mobile-button modal-button" href="#myModal5">Details</button>
-    </div>
+        </div>
+      </div>
 
          
     <!-- The Modal -->
@@ -285,13 +320,21 @@
     </div>
 
     <div class="right">
+      <div class="buttons-right">
+        <button class="mobile-button" onclick="window.location.href = '#0';">Link</button>
+        <button class="mobile-button modal-button" href="#myModal6">Details</button>
+        </div>
+      <div class="side-right">
         <h2>Country Project</h2>
         <img src="images/country-project.png" alt="country_project">
+      </div>
         <button class="desktop-button" onclick="window.location.href = '#0';">Link</button>
         <button class="desktop-button modal-button" href="#myModal6">Details</button>
+        <div class="buttons">
         <button class="mobile-button" onclick="window.location.href = 'country_project/index.html';">Link</button>
         <button class="mobile-button modal-button" href="#myModal6">Details</button>
-    </div>
+      </div>
+      </div>
 
          
     <!-- The Modal -->
@@ -364,16 +407,15 @@ window.onclick = function(event) {
 </script>
 
 <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
     
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
     </script>
     <script src="scripts/scripts.js"></script>
 </body>

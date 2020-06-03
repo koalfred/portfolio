@@ -9,18 +9,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <label for="toggle" class="hamburger">&#9776;</label>
-    <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
-    </nav>
+    <div class="topnav">
+        <a href="index.html" class="active">ALFRED KO</a>
+        <div id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="fa"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     <h1>I am</h1>
     <img src="images/avatar.png" alt="avatar" class="avatar">
     <h1>Alfred Ko</h1>
     <p>Hello! My name is Alfred Ko and I am a front-end web developer. I am a graduate of the Technical Web Designer Program at BCIT Vancouver. Welcome to my portfolio, and I look forward to working with you!</p>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      
+      </script>
     <script src="scripts/scripts.js"></script>
 </body>
 </html>

@@ -10,14 +10,19 @@
 </head>
 <body>
     <form action="contact-form.php" method="POST"></form>
-    <label for="toggle" class="hamburger">&#9776;</label>
-    <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
-    </nav>
+    <div class="topnav">
+        <a href="index.html" class="active">ALFRED KO</a>
+        <div id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="fa"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     <h1>Contact</h1>
     <div class="contact-intro">
         <p>Are you interested in working on a project together? Feel free to leave a message!</p>
@@ -51,5 +56,17 @@
         <h3>For contact inquiries:</h3>
         <p>alfred.frontend@gmail.com</p>
         </div>
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            
+            </script>
 </body>
 </html>

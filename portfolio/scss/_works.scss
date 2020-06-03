@@ -58,36 +58,66 @@
     cursor: pointer;
   }
 
+  .buttons-right {
+      display: none;
+  }
+
 @media (min-width: 768px) {
     .left {
+        text-align: left;
+        display: flex;
+        margin: 0 auto;
+        flex: 1;
+        width: 80%;
         
-        .mobile-button {
-            display: none;
+        img {
+            width: 80%;
         }
 
-        .desktop-button {
-            display: block;
-            float: right;
-            
-        }
+ 
     }
 
     .right {
-        
-        .mobile-button {
+        text-align: right;
+        display: flex;
+        margin: 0 auto;
+        flex: 1;
+        width: 80%;
+
+        img {
+            width: 80%;
+        }
+
+        .buttons {
             display: none;
         }
 
-        .desktop-button {
-            display: block;
-            float: left;
-        }
+     
     }
 
-    .work-section-left {
-        float: left;
+    .mobile-button {
+        display: block;
+        width: 100%;
+        margin: 50px;      
     }
-    .work-section-right {
-        float: right;
+
+    .buttons {
+        margin-top: 10%;
+        margin-bottom: 6%;
     }
+
+    .buttons-right {
+        display: block;
+        margin-top: 7%;
+        margin-bottom: 6%;
+    }
+    
+@media (min-width: 1000px) {
+    .buttons, .buttons-right {
+        margin-top: 10%;
+    }
+
+
+}
+
 }

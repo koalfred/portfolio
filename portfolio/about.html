@@ -9,14 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <label for="toggle" class="hamburger">&#9776;</label>
-    <nav>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
-    </nav>
+    <div class="topnav">
+        <a href="index.html" class="active">ALFRED KO</a>
+        <div id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="works.html">Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="fa"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+  
     <h1>About</h1>
     <div class="about-content">
     <p>Hello everybody! My name is Alfred Ko and I am a Vancouver-based front-end web developer. I have graduated from the TWD (Technical Web Designer) Program at BCIT. Before entering this program, I obtained my BA in Speech Sciences at UBC, but I felt that I wanted a career change. After pulling up Codecademy one day and trying out their HTML and CSS course out of curiosity, I really got into coding, and when I discovered that there was such a field that uses coding called “web development”, that was when I felt really sold on it. I love not only the problem solving aspect of the field, but with coding you can also enrich the visual outlook and browsing experience of websites as well.</p> 
@@ -59,5 +65,17 @@
             <td>Adobe XD</td>
         </tr>
     </table>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        
+        </script>
 </body>
 </html>

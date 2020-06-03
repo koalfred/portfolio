@@ -40,6 +40,48 @@ img:not(.avatar) {
 
   img:not(.avatar) {
     width: 45%; } }
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: white;
+  height: 500px;
+  color: white;
+  border-radius: 10px; }
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  position: relative; }
+
+.topnav #myLinks {
+  display: none; }
+
+.topnav a {
+  color: #94007b;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-transform: uppercase; }
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right; }
+
+.topnav a:hover {
+  background-color: white;
+  color: #6e0069; }
+
+.active {
+  background-color: white;
+  color: purple;
+  font-weight: bolder;
+  font-size: 2em; }
+
 nav {
   text-align: center; }
 
@@ -47,27 +89,8 @@ li {
   list-style: none;
   padding: 20px; }
 
-.show-nav nav {
-  display: block; }
-
-.hamburger {
-  cursor: pointer; }
-
-.hamburger {
-  margin: 0 10px 0 0;
-  font-size: 26px;
-  line-height: 70px;
-  text-align: right;
-  color: #630063;
-  display: block;
-  cursor: pointer; }
-
-#toggle:checked + nav {
-  display: block; }
-
-a {
+a:not(.active, .icon) {
   text-decoration: none;
-  text-transform: uppercase;
   color: #630063;
   display: block;
   border-bottom: 2px solid transparent; }
@@ -78,26 +101,68 @@ a, .fa-twitter, .fa-linkedin {
 .fa-twitter, .fa-linkedin {
   padding: 20px; }
 
-a:hover, a:active {
-  transform: scaleX(1);
-  transition: all 0.3s ease-in-out 0s; }
+.fa {
+  display: flex;
+  margin: 0 auto; }
 
-a:after, a:visited:after {
-  content: '';
-  height: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  background: #630063;
-  transition: 0.2s; }
-
-a:hover:after, a:visited:hover:after {
-  width: 100%; }
+a {
+  position: relative;
+  display: block;
+  padding: 16px 0;
+  margin: 0 12px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-transform: uppercase;
+  transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+  color: purple; }
 
 @media (min-width: 768px) {
-  .hamburger {
+  a:not(.fa)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: purple;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out; }
+
+  .active:not(.fa)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: purple;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out; }
+
+  a:active::before {
+    background-color: purple; }
+
+  a:hover::before, a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1); }
+
+  .topnav a {
+    font-size: 12px; }
+
+  .fa-bars {
     display: none; }
+
+  .topnav #myLinks {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto; }
+
+  .fa {
+    margin: 0; }
 
   nav {
     display: flex;
@@ -109,6 +174,9 @@ a:hover:after, a:visited:hover:after {
     margin-right: 20px;
     margin-top: 3px;
     padding: 0; } }
+@media (min-width: 768px) and (min-width: 1000px) {
+  .topnav a {
+    font-size: 17px; } }
 table {
   margin: 0 auto;
   border: 3px solid #630063;
@@ -294,23 +362,45 @@ button {
   text-decoration: none;
   cursor: pointer; }
 
+.buttons-right {
+  display: none; }
+
 @media (min-width: 768px) {
-  .left .mobile-button {
-    display: none; }
-  .left .desktop-button {
+  .left {
+    text-align: left;
+    display: flex;
+    margin: 0 auto;
+    flex: 1;
+    width: 80%; }
+    .left img {
+      width: 80%; }
+
+  .right {
+    text-align: right;
+    display: flex;
+    margin: 0 auto;
+    flex: 1;
+    width: 80%; }
+    .right img {
+      width: 80%; }
+    .right .buttons {
+      display: none; }
+
+  .mobile-button {
     display: block;
-    float: right; }
+    width: 100%;
+    margin: 50px; }
 
-  .right .mobile-button {
-    display: none; }
-  .right .desktop-button {
+  .buttons {
+    margin-top: 10%;
+    margin-bottom: 6%; }
+
+  .buttons-right {
     display: block;
-    float: left; }
-
-  .work-section-left {
-    float: left; }
-
-  .work-section-right {
-    float: right; } }
+    margin-top: 7%;
+    margin-bottom: 6%; } }
+@media (min-width: 768px) and (min-width: 1000px) {
+  .buttons, .buttons-right {
+    margin-top: 10%; } }
 
 /*# sourceMappingURL=styles.css.map */
