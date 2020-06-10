@@ -1,0 +1,179 @@
+$first-color: #19559F;
+$second-color: white;
+$font-family-1: 'Montserrat', sans-serif;
+$font-family-2: 'Alegreya Sans', sans-serif;
+$font-family-3: 'Amiko', sans-serif;
+
+.menu-page, .reservations-page{
+    .menu-intro {
+        padding: 0 30px;
+        max-width: 800px;
+        margin: auto;
+    }
+    body {
+        background-color: $first-color;
+    }
+
+    header {
+        font-family: $font-family-1;
+    }
+
+    .meal img {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+   .wrapper {
+        background-color: $second-color;
+        // color: $first-color;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        // border-radius: 20px;
+        animation: fadeIn ease 2s, mymove 5s infinite;;
+        -webkit-animation: fadeIn ease 2s;
+        -moz-animation: fadeIn ease 2s;
+        -o-animation: fadeIn ease 2s;
+        -ms-animation: fadeIn ease 2s;
+        
+        h1 {
+            padding-top: 100px;
+            padding-bottom: 24px;
+        }
+
+        p {
+            padding-bottom: 25px;
+        }
+
+        .meal img {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        text-align: center;
+    }
+
+    li p {
+        font-size: 14px;
+    }
+
+
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    } 
+
+    .wrapper h1, h2 {
+        font-family: $font-family-2;
+        text-align: center;
+    }
+
+    .wrapper li, p {
+        font-family: $font-family-3;
+    }
+
+        
+    td:first-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width:1500px;
+    height:0px ;
+    margin-left: 1em;
+    border-bottom:2px dotted grey;
+    }
+        
+
+    .wrapper li {
+        list-style: none;
+    }
+
+    @media (min-width: 600px) {
+        .menu-page, .reservations-page {
+            .wrapper {
+                width: 70%;
+                padding: 30px;
+
+                h1 {
+                    padding-top: 90px;
+                }
+            }  
+        }
+
+        .meal img {
+            width: 36%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin: 0 auto;
+            display: flex;
+            flex: 1;
+        }
+    }
+  
+    @media (min-width: 900px) {
+     
+        .meal img {
+            width: 28%;
+            display: inline-flex;
+            justify-content: space-evenly;
+            margin-left: 3.73%;
+        }
+
+        .meal {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            padding-top: 90px;
+            margin: 0 auto;
+
+        }
+        
+        .desserts {
+            column-count: 2;
+        }
+        
+    }
+}
+
+.menu-page {
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+    h2 {
+        background-color: $first-color;
+        padding: 25px;
+        color: white;
+        font-weight: 300;
+        margin-bottom: 40px;
+    }
+    h4 {
+        margin-bottom: 10px;
+        margin-top: 15px;
+    }
+    .menu-items {
+        p {
+            padding-bottom: 10px;
+        }
+    }
+    .desserts {
+        margin-bottom: 30px;
+    }
+    footer {
+        img {
+            text-align: center;
+            margin-left: auto;
+            display: inline;
+        }
+    }
+}

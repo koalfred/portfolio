@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="homepage" lang="en">
+
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159651943-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159651943-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skål - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400|Amiko|Montserrat:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<header>
+<div class="container">
+<h1><a href="index.html">SKÅL</a></h1>
+
+
+<div id="menu-btn" class="menu-btn" onclick="myFunction(this)">
+    <div class="menu-bar bar1"></div>
+    <div class="menu-bar bar2"></div>
+    <div class="menu-bar bar3"></div>
+</div><!-- end menu-btn -->
+
+<div class="menu-options">
+<div class="lang-select">
+<a href="#0">En</a>
+<a href="#0">Fr</a>
+<a href="#0">Sc</a>
+</div><!-- end of language selection -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="menu.html">Menus</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="#0">Events</a></li>
+        </ul>
+    </nav>
+</div><!-- end menu options -->
+</div>
+</header>
+<div class="wrapper">
+<div class="banner">
+    <img src="images/home-banner.jpg" alt="People raising a glass over a dinner table">
+    <p>Skål (or "Cheers") is the spirit of celebrating good company over great food and drinks.</p>
+</div><!-- end of banner -->
+
+<main>
+<section class="news">
+
+        <h2>What's new?</h2>
+
+<div class="slideshow-container">
+
+        <div class="myslides fade">
+        <img src="images/news-banner.jpg" alt="A fancy candlelit dinner table">
+        <p>Skål is celebrating it's 5th year since launch and we'd like to celebrate this milestone by having you join us on a night of live music, activities, and delicious food.</p>
+        <a class="details" href="#0">more details</a>
+    </div>
+
+    <div class="myslides fade">
+        <img src="images/music-event-banner.jpg" alt="A drum set in a darkly lit venue">
+        <p>This week's live music session is one you do not want to miss! Eat, drink, dance - have fun!</p>
+        <a class="details" href="#0">more details</a>
+    </div>
+
+    <div class="myslides fade">
+        <img src="images/outdoor-party.jpg" alt="An outdoor party with hanging lights">
+        <p>Summer is coming up, and what better way to celebrate than with an outdoor BBQ?</p>
+        <a class="details" href="#0">more details</a>
+    </div>
+
+<!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div><!-- end of slideshow-container -->
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+</section><!-- end of news/events -->
+
+<section class="menu-row">
+<h2>Our Menus</h2>
+
+<div class="menu-flex">
+    <div class="menu-box">
+    <a href="menu.html" class="menu">
+        <img src="images/brunch-banner.jpg" alt="A waffle spread">
+        <h2>Brunch</h2>
+    </a>
+    </div>
+
+    <div class="menu-box">
+    <a href="menu.html" class="menu">
+        <img src="images/lunch-banner.jpg" alt="Gravlax">
+        <h2>Lunch</h2>
+    </a>
+    </div>
+
+    <div class="menu-box">
+    <a href="menu.html" class="menu">
+        <img src="images/dinner-banner.jpg" alt="Swedish meatballs">
+        <h2>Dinner</h2>
+    </a>
+    </div>
+</div><!-- end of menu-flex -->
+</section><!-- end of menus -->
+</main>
+</div><!-- end of wrapper -->
+
+
+<footer>
+    <div class="box hours">
+        <h3>Hours:</h3>
+        <p>Mon-Fri: 11am-9pm <br>
+        Sat: 11am-10pm <br>
+        Sun: 10am-8pm</p>
+    </div><!-- end of hours -->
+    <div class="box address">
+        <h3>Address:</h3>
+        <address>1234 Swedish Street <br>
+            Vancouver, BC <br>
+            V1M 3V6
+        </address>
+    </div><!--end of address-->
+    <div class="box site-map">
+        <h1>SKÅL</h1>
+        <a href="about-us.html">About</a>
+        <a href="menu.html">Menus</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="#0">Events</a>
+    </div><!--end of site-map-->
+    <div class="box contact">
+        <h3>Contact us:</h3>
+        <p>phone: 604-123-4567 <br>
+        email: <a href="#0">skal@info.com</a></p>
+    </div><!--end of contact-->
+    <div class="box social-media">
+        <h3>Connect:</h3>
+        <div class="s-media-icons">
+            <a href="#0"><img src="./images/facebook2.svg" alt="Facebook"></a>
+            <a href="#0"><img src="./images/instagram.svg" alt="Instagram"></a>
+        </div>
+    </div><!--social media-->
+</footer>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

@@ -8,9 +8,16 @@ h1 {
 p {
   text-align: justify; }
 
+.wrapper {
+  width: 95%;
+  margin: 0 auto; }
+
 @media (min-width: 768px) {
   body {
-    padding: 24px; } }
+    padding: 24px; }
+
+  .wrapper {
+    width: 75%; } }
 body {
   font-family: "Poppins", sans-serif;
   -webkit-animation: fadein 2s;
@@ -89,7 +96,7 @@ li {
   list-style: none;
   padding: 20px; }
 
-a:not(.active, .icon) {
+a:not(.active, .icon, .download a) {
   text-decoration: none;
   color: #630063;
   display: block;
@@ -146,7 +153,7 @@ a {
   a:active::before {
     background-color: purple; }
 
-  a:hover::before, a:focus::before {
+  a:hover::before:not(.download), a:focus::before:not(.download) {
     transform-origin: left top;
     transform: scale(1, 1); }
 
@@ -173,7 +180,13 @@ a {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 3px;
-    padding: 0; } }
+    padding: 0; }
+
+  .download {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    text-align: center; } }
 @media (min-width: 768px) and (min-width: 1000px) {
   .topnav a {
     font-size: 17px; } }
@@ -260,7 +273,7 @@ h4 {
     margin: 0 auto;
     padding: 0; }
     .class-email label, .class-message label {
-      margin-left: 4.5%; }
+      margin-left: 4.7%; }
 
   .submit {
     width: 25%; } }
@@ -290,11 +303,14 @@ button {
 .lower-buttons {
   display: block; }
 
+.github {
+  margin-top: 10px;
+  text-align: center; }
+
 @media (min-width: 768px) {
-  button {
+  button:not(.mobile-button) {
     width: 20%;
-    margin: 10px;
-    margin-top: 10%; } }
+    margin: 10px auto; } }
 .desktop-button {
   display: none; }
 
@@ -349,6 +365,10 @@ button {
   width: 100%;
   text-align: center; }
 
+.wireframes {
+  width: 70%;
+  margin: 0 auto; }
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -365,13 +385,16 @@ button {
 .buttons-right {
   display: none; }
 
+.download {
+  margin: 0 auto;
+  text-align: center; }
+
 @media (min-width: 768px) {
   .left {
     text-align: left;
     display: flex;
     margin: 0 auto;
-    flex: 1;
-    width: 80%; }
+    flex: 1; }
     .left img {
       width: 80%; }
 
@@ -379,8 +402,7 @@ button {
     text-align: right;
     display: flex;
     margin: 0 auto;
-    flex: 1;
-    width: 80%; }
+    flex: 1; }
     .right img {
       width: 80%; }
     .right .buttons {
@@ -391,16 +413,26 @@ button {
     width: 100%;
     margin: 50px; }
 
-  .buttons {
-    margin-top: 10%;
-    margin-bottom: 6%; }
-
   .buttons-right {
     display: block;
     margin-top: 7%;
-    margin-bottom: 6%; } }
+    margin-right: 10%; }
+
+  .left .buttons {
+    padding: 0;
+    margin-top: 7%;
+    margin-bottom: 6%;
+    margin-right: 15%; }
+
+  .row-1 {
+    display: flex;
+    justify-content: space-evenly; } }
 @media (min-width: 768px) and (min-width: 1000px) {
   .buttons, .buttons-right {
     margin-top: 10%; } }
+footer p {
+  padding-top: 36px;
+  margin: 0 auto;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

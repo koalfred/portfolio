@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html class="reservations-page" lang="en">
+<head>
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159651943-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159651943-1');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservations</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Amiko|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1><a href="index.html">SKÅL</a></h1>
+        
+        
+        <div id="menu-btn" class="menu-btn" onclick="myFunction(this)">
+            <div class="menu-bar bar1"></div>
+            <div class="menu-bar bar2"></div>
+            <div class="menu-bar bar3"></div>
+        </div><!-- end menu-btn -->
+        
+        <div class="menu-options">
+        <div class="lang-select">
+        <a href="#0">En</a>
+        <a href="#0">Fr</a>
+        <a href="#0">Sc</a>
+        </div><!-- end of language selection -->
+        
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="menu.html">Menus</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li><a href="#0">Events</a></li>
+                </ul>
+            </nav>
+        </div><!-- end menu options -->
+        </div>
+        </header>
+
+    <form action=""> 
+        <div class="wrapper">
+        <h1>Reservations</h1>
+        <p>We can't wait to see you! Fill in the form below and we'll get you started to reserving your table! Fill in the form below, and vi ses!</p>
+        <ul>
+        <div class="form-entry">
+        <li>Name: <input type="text" id="name" class="name" name="name"></li>
+        <li>E-mail: <input type="text" id="name" class="name" name="name"></li>
+        <li>Telephone: <input type="text" id="name" class="name telephone" name="name"></li>
+        </div><!-- end of form entry -->
+
+        <li>Which meal are you planning to have?
+            <br>
+        <input type="radio" id="brunch" name="meal" value="brunch">       
+        <label for="brunch">Brunch</label><br>
+        <input type="radio" id="lunch" name="meal" value="lunch">
+        <label for="lunch">Lunch</label><br>
+        <input type="radio" id="dinner" name="meal" value="dinner">
+        <label for="dinner">Dinner</label><br>
+        </li>
+        <li>
+        <label for="quantity">How many people are going?</label>
+        <input type="number" id="quantity" class="quantity" name="quantity" min="1" max="20">
+        <p class="more-seats">If you wish to reserve more seats, please contact us    <a href="#0">here.</a></p>   
+        </li>
+        <input type="submit" id="submit" class="submit">
+        </ul>
+    </div>
+</div>
+    </form>
+
+
+    <footer>
+        <div class="box hours">
+            <h3>Hours:</h3>
+            <p>Mon-Fri: 11am-9pm <br>
+            Sat: 11am-10pm <br>
+            Sun: 10am-8pm</p>
+        </div><!-- end of hours -->
+        <div class="box address">
+            <h3>Address</h3>
+            <address>1234 Swedish Street <br>
+                Vancouver, BC <br>
+                V1M 3V6
+            </address>
+        </div><!--end of address-->
+        <div class="box site-map">
+            <h1>SKÅL</h1>
+            <a href="about-us.html">About</a>
+            <a href="menu.html">Menus</a>
+            <a href="reservations.html">Reservations</a>
+            <a href="#0">Events</a>
+          </div><!--end of site-map-->
+        <div class="box contact">
+            <h3>Contact us</h3>
+            <p>phone: 604-123-4567 <br>
+            email: <a href="#0">skal@info.com</a></p>
+        </div><!--end of contact-->
+        <div class="box social-media">
+            <h3>Connect</h3>
+            <a href="#0"><img src="images/facebook2.svg" alt="Facebook logo"></a>
+            <a href="#0"><img src="images/instagram.svg" alt="Instagram logo"></a>
+        </div><!--social media-->
+    </footer><!-- end footer -->
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

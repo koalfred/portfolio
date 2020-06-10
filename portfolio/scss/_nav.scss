@@ -54,7 +54,7 @@ li {
     list-style: none;
     padding: 20px;
 }
-a:not(.active, .icon) {
+a:not(.active, .icon, .download a) {
     text-decoration: none;
     color: $color;
     display: block;
@@ -120,7 +120,7 @@ a {
   a:active::before {
     background-color: purple;
   }
-  a:hover::before, a:focus::before {
+  a:hover::before:not(.download), a:focus::before:not(.download) {
     transform-origin: left top;
     transform: scale(1, 1);
   }
@@ -154,6 +154,13 @@ a {
         margin-right: 20px;
         margin-top: 3px;
         padding: 0;
+    }
+
+    .download {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 0 auto;
+      text-align: center;
     }
 
 @media (min-width: 1000px) {
