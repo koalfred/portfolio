@@ -70,6 +70,10 @@
   .download {
       margin: 0 auto;
       text-align: center;
+      
+      a {
+          text-decoration: none;
+      }
   }
 
 @media (min-width: 768px) {
@@ -78,7 +82,6 @@
         display: flex;
         margin: 0 auto;
         flex: 1;
-        // width: 80%;
         
         img {
             width: 80%;
@@ -131,6 +134,18 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    .screenshots {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;  
+
+        img {
+            padding: 10px;
+        }
+    }
+
     
 @media (min-width: 1000px) {
     .buttons, .buttons-right {

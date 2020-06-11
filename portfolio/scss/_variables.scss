@@ -1,5 +1,5 @@
 $font-family: 'Poppins', sans-serif;
-$color: rgb(99, 0, 99);
+$color: rgb(102, 2, 102);
 
 body {
     font-family: $font-family;
@@ -24,17 +24,73 @@ img:not(.avatar) {
     margin: 0 auto;
 }
 
+.logo-mobile {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 14px;
+
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+.logo-desktop {
+    display: none;
+}
+
 .avatar {
     width: 80%;
 }
 
 
 @media (min-width: 768px) {
+
+    .logo-mobile {
+        display: none;
+        padding: 0;
+        
+        img {
+            display: none;
+            margin: 0;
+        }
+        
+    }
     .avatar {
         width: 25%;
     }
 
-    img:not(.avatar) {
+    img:not(.avatar, .logo-desktop) {
         width: 45%;
+    }
+
+    .logo-desktop {
+        display: flex;
+        padding: 0;
+        transition: 0.4s;
+    }
+
+    .logo-desktop:hover {
+        opacity: 0.8;
+    }
+
+    a.active.logo-desktop {
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    a.active.logo-mobile {
+        display: none;
+    }
+
+    
+}
+
+@media (min-width: 1000px) {
+    .logo-desktop {
+        width: 45%;
+    }
+
+    a.active.logo-desktop {
+        margin: 0;
     }
 }

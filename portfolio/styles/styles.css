@@ -32,21 +32,59 @@ body {
   to {
     opacity: 1; } }
 p {
-  color: #630063; }
+  color: #660266; }
 
 img:not(.avatar) {
   width: 100%;
   margin: 0 auto; }
 
+.logo-mobile {
+  width: 40%;
+  margin: 0 auto;
+  padding-bottom: 14px; }
+  .logo-mobile img {
+    margin-bottom: 20px; }
+
+.logo-desktop {
+  display: none; }
+
 .avatar {
   width: 80%; }
 
 @media (min-width: 768px) {
+  .logo-mobile {
+    display: none;
+    padding: 0; }
+    .logo-mobile img {
+      display: none;
+      margin: 0; }
+
   .avatar {
     width: 25%; }
 
-  img:not(.avatar) {
-    width: 45%; } }
+  img:not(.avatar, .logo-desktop) {
+    width: 45%; }
+
+  .logo-desktop {
+    display: flex;
+    padding: 0;
+    transition: 0.4s; }
+
+  .logo-desktop:hover {
+    opacity: 0.8; }
+
+  a.active.logo-desktop {
+    padding: 0;
+    margin-top: 10px; }
+
+  a.active.logo-mobile {
+    display: none; } }
+@media (min-width: 1000px) {
+  .logo-desktop {
+    width: 45%; }
+
+  a.active.logo-desktop {
+    margin: 0; } }
 .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -81,11 +119,11 @@ img:not(.avatar) {
 
 .topnav a:hover {
   background-color: white;
-  color: #6e0069; }
+  color: #85007e; }
 
 .active {
   background-color: white;
-  color: purple;
+  color: #3d023d;
   font-weight: bolder;
   font-size: 2em; }
 
@@ -98,7 +136,7 @@ li {
 
 a:not(.active, .icon, .download a) {
   text-decoration: none;
-  color: #630063;
+  color: #660266;
   display: block;
   border-bottom: 2px solid transparent; }
 
@@ -118,10 +156,12 @@ a {
   padding: 16px 0;
   margin: 0 12px;
   letter-spacing: 1px;
-  line-height: 16px;
   text-transform: uppercase;
   transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
-  color: purple; }
+  color: #5c005c; }
+
+.fa-bars {
+  padding-top: 6px; }
 
 @media (min-width: 768px) {
   a:not(.fa)::before {
@@ -132,7 +172,7 @@ a {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: purple;
+    background-color: #3f013f;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s,transform 0.2s ease-out; }
@@ -145,27 +185,32 @@ a {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: purple;
+    background-color: #3b003b;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s,transform 0.2s ease-out; }
 
   a:active::before {
-    background-color: purple; }
+    background-color: #630563; }
 
-  a:hover::before:not(.download), a:focus::before:not(.download) {
+  a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1); }
 
+  li {
+    padding: 0; }
+
   .topnav a {
     font-size: 12px; }
+
+  .topnav a.icon {
+    display: none; }
 
   .fa-bars {
     display: none; }
 
   .topnav #myLinks {
     display: flex;
-    justify-content: space-evenly;
     margin: 0 auto; }
 
   .fa {
@@ -173,7 +218,7 @@ a {
 
   nav {
     display: flex;
-    justify-content: space-evenly;
+    flex: 1;
     text-align: center; }
 
   .fa-twitter, .fa-linkedin {
@@ -192,16 +237,16 @@ a {
     font-size: 17px; } }
 table {
   margin: 0 auto;
-  border: 3px solid #630063;
+  border: 3px solid #660266;
   border-collapse: collapse; }
 
 th {
-  background-color: #630063;
+  background-color: #660266;
   color: white;
   padding: 10px; }
 
 td {
-  color: #630063;
+  color: #660266;
   padding: 10px; }
 
 @media (min-width: 768px) {
@@ -225,13 +270,13 @@ input {
   margin: 0; }
 
 h3 {
-  color: #630063;
+  color: #660266;
   text-align: left; }
 
 .submit {
   font-family: "Poppins", sans-serif;
   border: none;
-  background-color: #630063;
+  background-color: #660266;
   color: white;
   width: 40%;
   padding-top: 10px;
@@ -244,7 +289,7 @@ h3 {
   text-align: center; }
 
 h4 {
-  color: #630063; }
+  color: #660266; }
 
 .footer h3, .footer p {
   margin: 0 auto;
@@ -252,6 +297,16 @@ h4 {
 
 .footer {
   margin-top: 5%; }
+
+.contact-info {
+  margin: 0 auto; }
+  .contact-info p {
+    text-align: center; }
+  .contact-info a {
+    text-decoration: none; }
+  .contact-info li .fa {
+    margin: 0 auto;
+    padding-bottom: 10px; }
 
 @media (min-width: 768px) {
   .first-name, .last-name {
@@ -276,7 +331,8 @@ h4 {
       margin-left: 4.7%; }
 
   .submit {
-    width: 25%; } }
+    width: 25%;
+    margin-bottom: 14px; } }
 @media (min-width: 1000px) {
   .first-name, .last-name {
     width: 38.5%; }
@@ -291,7 +347,7 @@ h4 {
 button {
   font-family: "Poppins", sans-serif;
   border: none;
-  background-color: #630063;
+  background-color: #660266;
   color: white;
   width: 50%;
   padding-top: 10px;
@@ -388,6 +444,8 @@ button {
 .download {
   margin: 0 auto;
   text-align: center; }
+  .download a {
+    text-decoration: none; }
 
 @media (min-width: 768px) {
   .left {
@@ -426,7 +484,15 @@ button {
 
   .row-1 {
     display: flex;
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+
+  .screenshots {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto; }
+    .screenshots img {
+      padding: 10px; } }
 @media (min-width: 768px) and (min-width: 1000px) {
   .buttons, .buttons-right {
     margin-top: 10%; } }

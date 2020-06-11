@@ -37,12 +37,12 @@
   
   .topnav a:hover {
     background-color: rgb(255, 255, 255);
-    color: rgb(110, 0, 105);
+    color: rgb(133, 0, 126);
   }
   
   .active {
     background-color: white;
-    color: purple;
+    color: rgb(61, 2, 61);
     font-weight: bolder;
     font-size: 2em;
   }
@@ -74,17 +74,19 @@ a, .fa-twitter, .fa-linkedin {
     margin: 0 auto;
 }
 
-
 a {
   position: relative;
   display: block;
   padding: 16px 0;
   margin: 0 12px;
   letter-spacing: 1px;
-  line-height: 16px;
   text-transform: uppercase;
   transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
-  color: purple;
+  color: rgb(92, 0, 92);
+}
+
+.fa-bars {
+  padding-top: 6px;
 }
 
   
@@ -97,7 +99,7 @@ a {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: purple;
+    background-color: rgb(63, 1, 63);
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s,transform 0.2s ease-out;
@@ -111,22 +113,30 @@ a {
     left: 0;
     height: 3px;
     width: 100%;
-    background-color: purple;
+    background-color: rgb(59, 0, 59);
     transform-origin: right top;
     transform: scale(0, 1);
     transition: color 0.1s,transform 0.2s ease-out;
   }
   
   a:active::before {
-    background-color: purple;
+    background-color: rgb(99, 5, 99);
   }
-  a:hover::before:not(.download), a:focus::before:not(.download) {
+  a:hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
   }
 
+  li {
+    padding: 0;
+  }
+
   .topnav a {
-    font-size:12px;
+    font-size: 12px;
+  }
+
+  .topnav a.icon {
+    display: none;
   }
   
   .fa-bars {
@@ -135,7 +145,6 @@ a {
 
     .topnav #myLinks {
         display: flex;
-        justify-content: space-evenly;
         margin: 0 auto;
       }
 
@@ -145,7 +154,7 @@ a {
 
     nav {
         display: flex;
-        justify-content: space-evenly;
+        flex: 1;
         text-align: center;
     }
 

@@ -54,6 +54,26 @@ h4 {
     margin-top: 5%;
 }
 
+.contact-info {
+    margin: 0 auto;
+
+    p {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        
+    }
+
+    li {       
+        .fa {
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+    }
+}
+
 @media (min-width: 768px) {
 
     .first-name, .last-name {
@@ -86,6 +106,7 @@ h4 {
 
     .submit {
         width: 25%;
+        margin-bottom: 14px;
     }
 
 }
