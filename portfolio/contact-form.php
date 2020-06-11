@@ -10,8 +10,9 @@
 
 <body>
 <div class="topnav">
-        <a href="index.html" class="active">ALFRED KO</a>
+<a href="index.html" class="active logo-mobile"><img src="logo.png" alt="Logo"></a>
         <div id="myLinks">
+        <li class="logo-desktop"><a href="index.html" class="active logo-desktop"><img src="logo.png" alt="Logo" class="logo-desktop"></a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="works.html">Works</a></li>
