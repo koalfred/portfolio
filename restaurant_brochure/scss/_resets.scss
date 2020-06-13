@@ -1,0 +1,22 @@
+//Resets
+
+body, nav, ul, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+//Box sizing reset
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+//Image reset
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0
+}

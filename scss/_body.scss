@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    padding: 16px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-align: left;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    
+    body {
+        padding: 24px;
+    }
+
+    .wrapper {
+        width: 75%;
+    }
+    
+}

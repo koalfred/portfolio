@@ -1,0 +1,78 @@
+//Footer styles
+footer {
+    padding: 20px 20px;
+    background-color: $main-bg;
+    color: white;
+    text-align: center;
+    h1 {
+        font-family: $logo;
+    }
+
+    h2 {
+        padding: 0 0 5px 0;
+        font-family: $heading;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    h3 {
+        padding: 0 0 5px 0;
+        font-family: $logo;
+        font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 16px;
+        font-family: $heading;
+        font-weight: 500;
+    }
+    .box {
+        margin: 10px;
+    }
+
+    .site-map {
+//        display: flex;
+//        flex-direction: column;
+        padding-top: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-family: $heading;
+        font-weight: 500;
+        font-size: 16px;
+    }
+    address {
+        font-style: normal;
+        font-family: $heading;
+        font-weight: 500;
+    }
+
+    .s-media-icons {
+        display: flex;
+        justify-content: center;
+        a {
+            display: block;
+
+        }
+    }
+
+    @media (min-width: 700px) {
+        display: flex;
+        justify-content: space-around;
+
+        .site-map {
+            display: block;
+            margin-top: 0px;
+        }
+
+        .site-map h1 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+}

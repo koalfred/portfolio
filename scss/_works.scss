@@ -1,0 +1,242 @@
+.desktop-button {
+    display: none;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: left;
+  }
+
+  .screenshots {
+      width: 100%;
+      text-align: center;
+  }
+
+  .wireframes {
+      width: 70%;
+      margin: 0 auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .buttons-right {
+      display: none;
+  }
+
+  .download {
+      margin: 0 auto;
+      text-align: center;
+      
+      a {
+          text-decoration: none;
+      }
+  }
+
+  .credit {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      text-decoration: none;
+  }
+
+
+@media (min-width: 768px) {
+    .credit {
+        display: flex;
+    }
+
+    .left {
+        text-align: left;
+        display: flex;
+        margin: 0 auto;
+        flex: 1;
+        
+        img {
+            width: 80%;
+        }
+    }
+
+    .right {
+        text-align: right;
+        display: flex;
+        margin: 0 auto;
+        flex: 1;
+
+        img {
+            width: 80%;
+        }
+
+        .buttons {
+            display: none;
+        }
+
+     
+    }
+
+    .mobile-button {
+        display: block;
+        width: 100%;
+        margin: 50px;      
+    }
+
+    .buttons-right {
+        display: block;
+        margin-top: 7%;
+        margin-right: 10%;
+
+    }
+
+    .left {
+        .buttons {
+            padding: 0;
+            margin-top: 7%;
+            margin-bottom: 6%;
+            margin-right: 15%;
+        }
+    }
+    
+    .row-1, .row-4 {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        
+        p {
+            text-align: center;
+        }
+        
+    }
+
+    .row-2 {
+        p {
+            text-align: center;
+        }
+    }
+
+    .row-4 {
+        margin: 36px auto;
+        text-align: center;
+
+        .download {
+            display: block;
+        }
+    }
+
+    .screenshots {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;  
+
+        img {
+            padding: 10px;
+        }
+    }
+
+    .work-title-left-1 {
+        transform: translate(132%, 10px);
+    }
+
+    .work-title-left-5 {
+        transform: translate(108%, 10px);
+    }
+
+    .work-title-left-3 {
+        transform: translate(100%, -20px);
+        text-align: center;
+    }
+
+    .work-title-right-2, .work-title-right-6 {
+        transform: translate(-95%, 10px);
+    }
+
+    .work-title-right-4 {
+        transform: translate(-80%, 10px);
+    }
+
+    .modal {
+        h2, h3, .credit {
+            text-align: center;
+        }
+        
+    }
+
+    .row-1 {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    
+}
+    
+@media (min-width: 1000px) {
+    .buttons, .buttons-right {
+        margin-top: 10%;
+    }
+
+    .work-title-left-1 {
+        transform: translate(115%, 20px);
+    }
+
+    .work-title-right-2, .work-title-right-6 {
+        transform: translate(-103%, 40px);
+    }
+
+    .work-title-right-4 {
+        transform: translate(-95%, 40px);
+    }
+
+    .work-title-left-5 {
+        transform: translate(105%, 20px);
+    }
+
+    .work-title-left-3 {
+        transform: translate(75%, 20px);
+        text-align: center;
+    }
+
+}
+
