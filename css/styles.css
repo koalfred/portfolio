@@ -15,24 +15,6 @@ body {
     opacity: 100%;
   }
 }
-.loading {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px;
-  animation: animate 3s infinite;
-}
-
-@keyframes animate {
-  0% {
-    color: #f5c8f5;
-  }
-  100% {
-    color: #660266;
-  }
-}
 h1 {
   text-transform: uppercase;
 }
@@ -66,6 +48,11 @@ p {
     font-size: 32px;
   }
 }
+@media (min-width: 1200px) {
+  .wrapper {
+    width: 1000px;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -93,7 +80,7 @@ img:not(.avatar, .logo-desktop) {
 }
 
 .avatar {
-  width: 80%;
+  width: 210px;
 }
 
 @media (min-width: 768px) {
@@ -144,10 +131,6 @@ img:not(.avatar, .logo-desktop) {
     margin: 0;
   }
 }
-.topnav .nav-links {
-  max-width: 2000px;
-}
-
 .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -170,6 +153,10 @@ img:not(.avatar, .logo-desktop) {
   display: none;
 }
 
+.social-media-icons {
+  justify-content: center;
+}
+
 .nav-links a {
   justify-content: center;
   color: #94007b;
@@ -179,7 +166,7 @@ img:not(.avatar, .logo-desktop) {
   text-transform: uppercase;
 }
 
-.nav-links:hover {
+.nav-links a:hover {
   background-color: white;
   color: #85007e;
 }
@@ -215,9 +202,8 @@ a, .fa-twitter, .fa-linkedin {
   padding: 20px;
 }
 
-.fa {
+.social-media-icons {
   display: flex;
-  margin: 0 auto;
 }
 
 a {
@@ -296,7 +282,7 @@ a {
     background-color: #630563;
   }
 
-  .nav-links a:not(.logo-desktop, .logo-mobile):hover::before, a:focus::before {
+  .nav-links a:not(.logo-desktop, .logo-mobile):hover::before, a:not(.logo-desktop, .logo-mobile):focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
   }
@@ -314,10 +300,6 @@ a {
     margin: 0 auto;
   }
 
-  .fa {
-    margin: 0;
-  }
-
   nav {
     display: flex;
     flex: 1;
@@ -325,9 +307,6 @@ a {
   }
 
   .fa-twitter, .fa-linkedin {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 3px;
     padding: 0;
   }
 
@@ -458,7 +437,7 @@ h4 {
 .contact-info a {
   text-decoration: none;
 }
-.contact-info li .fa {
+.contact-info li .social-media-icons {
   margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -781,7 +760,6 @@ i.fas.fa-arrow-left.slick-arrow, i.fas.fa-arrow-right.slick-arrow {
   }
 
   .row-1, .row-4 {
-    display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
   }

@@ -58,7 +58,14 @@
             <div class="contact-info">
                 <h2>Further Contact</h2>
                 <p>alfred.frontend@gmail.com</p>
-                <li class="fa social_media_list"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
+                <div class="social-media-icons">
+                    <a href="https://twitter.com/alfredjihoon" id="twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alfred-ko-440079b9/" id="linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <?php include("includes/footer.php"); ?>

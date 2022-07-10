@@ -57,9 +57,9 @@
     <?php include('includes/works/modals/modal_6.php'); ?>
   </div>
   <?php include("includes/footer.php"); ?>
-</div>
-<?php include("includes/loading.php"); ?>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="scripts/scripts.js"></script>
+<!-- </div> -->
+  <?php include("includes/loading.php"); ?>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="scripts/scripts.js"></script>
 </body>
 </html>

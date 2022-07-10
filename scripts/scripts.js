@@ -33,16 +33,6 @@ window.onclick = function(event) {
     }
 }
 
-var main_body = document.querySelector('.main_body');
-var loading = document.querySelector('.loading');
-
-// setTimeout(mainPage, 1500);
-
-// function mainPage() {
-//   main_body.style.display = "block";
-//   loading.style.display = "none";
-// }
-
 jQuery('.slick-items').slick({
   prevArrow: '<i class="fas fa-arrow-left"></i>',
   nextArrow: '<i class="fas fa-arrow-right"></i>',
