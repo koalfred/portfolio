@@ -587,8 +587,9 @@ button {
   margin: 16px;
 }
 
-i.fas.fa-arrow-left.slick-arrow, i.fas.fa-arrow-right.slick-arrow {
+i.fa.fa-angle-left.slick-arrow, i.fa.fa-angle-right.slick-arrow {
   font-size: 28px;
+  font-weight: 900;
   align-self: center;
   color: #660266;
 }

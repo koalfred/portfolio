@@ -34,11 +34,11 @@ window.onclick = function(event) {
 }
 
 jQuery('.slick-items').slick({
-  prevArrow: '<i class="fas fa-arrow-left"></i>',
-  nextArrow: '<i class="fas fa-arrow-right"></i>',
+  prevArrow: '<i class="fa fa-angle-left"></i>',
+  nextArrow: '<i class="fa fa-angle-right"></i>',
 });
 
 jQuery('.slick-items-2').slick({
-  prevArrow: '<i class="fas fa-arrow-left"></i>',
-  nextArrow: '<i class="fas fa-arrow-right"></i>',
+  prevArrow: '<i class="fa fa-angle-left"></i>',
+  nextArrow: '<i class="fa fa-angle-right"></i>',
 });
