@@ -1,22 +1,27 @@
 .fname, .lname {
     font-family: $font-family;
     width: 90%;
+    padding: 6px;
 }
 
 .email, .message {
     width: 90%;
     font-family: $font-family;
     text-align: left;
-    padding: 0;
+    padding: 6px;
     margin: 0;
 }
 
 label {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 input {
     margin: 0;
+}
+
+input, textarea {
+    border: 1.5px solid $color;
 }
 
 h3 {
@@ -74,6 +79,12 @@ h4 {
     }
 }
 
+@media (min-width: 500px) {
+    label {
+        margin-left: 4%;
+    }
+}
+
 @media (min-width: 768px) {
 
     .first-name, .last-name {
@@ -109,9 +120,23 @@ h4 {
         margin-bottom: 14px;
     }
 
+    li.fa.social_media_list {
+        width: 250px;
+        margin: 20px auto;
+
+        a {
+            padding: 0;
+        }
+    }
+
 }
 
 @media (min-width: 1000px) {
+    form {
+        width: 700px;
+        margin: 0 auto;
+    }
+    
     .first-name, .last-name {
         width: 38.5%;
     }

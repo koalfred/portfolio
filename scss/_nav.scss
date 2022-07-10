@@ -1,3 +1,7 @@
+.topnav .nav-links {
+  max-width: 2000px;
+}
+
 .mobile-container {
     max-width: 480px;
     margin: auto;
@@ -11,31 +15,25 @@
     overflow: hidden;
     background-color: white;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
-  
-  .topnav #myLinks {
+
+  .nav-links {
     display: none;
   }
   
-  .topnav a {
+  .nav-links a {
+    justify-content: center;
     color: rgb(148, 0, 123);
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
     text-transform: uppercase;
   }
   
-  .topnav a.icon {
-    background: white;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    text-align: right;
-  }
-  
-  .topnav a:hover {
+  .nav-links:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(133, 0, 126);
   }
@@ -97,20 +95,33 @@ a {
   transition: 0.4s;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
+.change {
+  .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
 
-.change .bar2 {opacity: 0;}
+  .bar2 {
+    opacity: 0;
+  }
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 }
   
 @media (min-width: 768px) {
-  a:not(.fa)::before {
+  .nav-links {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-size: 12px;
+    }
+  }
+
+  a::before {
     content: '';
     display: block;
     position: absolute;
@@ -124,7 +135,7 @@ a {
     transition: color 0.1s,transform 0.2s ease-out;
   }
 
-  .active:not(.fa)::before {
+  .active::before {
     content: '';
     display: block;
     position: absolute;
@@ -141,7 +152,7 @@ a {
   a:active::before {
     background-color: rgb(99, 5, 99);
   }
-  a:hover::before, a:focus::before {
+  .nav-links a:not(.logo-desktop, .logo-mobile):hover::before, a:focus::before {
     transform-origin: left top;
     transform: scale(1, 1);
   }
@@ -150,19 +161,11 @@ a {
     padding: 0;
   }
 
-  .topnav a {
-    font-size: 12px;
-  }
-
-  .topnav a.icon {
+  .hamburger-icon {
     display: none;
   }
   
-  .fa-bars {
-        display: none;
-    }   
-
-    .topnav #myLinks {
+    .topnav .nav-links {
         display: flex;
         margin: 0 auto;
       }
@@ -192,8 +195,18 @@ a {
     }
 
 @media (min-width: 1000px) {
-  .topnav a {
-    font-size: 17px;
+  .nav-links {
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  a.active.logo-desktop {
+    align-self: center;
   }
 }
     

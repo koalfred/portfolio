@@ -3,40 +3,59 @@
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 50px; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow-y: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    max-height: calc(100vh - 100px);
-    overflow-y: auto;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-     -ms-animation: fadein 2s; /* Internet Explorer */
-      -o-animation: fadein 2s; /* Opera < 12.1 */
-         animation: fadein 2s;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+    max-height: none;
   }
 
-  @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-  
-  /* Modal Content */
   .modal-content {
+    position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    height: 75%;
+    overflow: scroll;
     text-align: left;
+    animation: slideDown 0.5s;
   }
+
+  .slick-slider {
+    display: flex;
+    margin: 16px auto;
+  }
+
+  .slick-initialized .slick-slide {
+    margin: 16px;
+  }
+
+  i.fas.fa-arrow-left.slick-arrow, i.fas.fa-arrow-right.slick-arrow {
+    font-size: 28px;
+    align-self: center;
+    color: $color;
+  }
+
+  @keyframes slideDown {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 
   .screenshots {
       width: 100%;
@@ -50,17 +69,21 @@
   
   /* The Close Button */
   .close {
-    color: #aaaaaa;
-    float: right;
+    color: $color;
+    position: absolute;
+    top: 5px;
+    right: 18px;
     font-size: 28px;
     font-weight: bold;
+    transition: all 0.2s ease-in-out;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: #ccc;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
   }
 
   .buttons-right {
@@ -69,30 +92,86 @@
 
   .download {
       margin: 0 auto;
-      text-align: center;
+      padding: 4px 0;
+      display: block;
       
       a {
           text-decoration: none;
+          padding: 4px 0;
+          margin: 0;
       }
   }
 
   .credit {
       display: block;
-      text-align: center;
+      text-align: left;
+      padding: 4px 0;
       margin: 0 auto;
       text-decoration: none;
   }
 
+.work-title-desktop {
+    display: none;
+}
+
+.work-title-mobile {
+    display: block;
+}
+
+.mobile-buttons-right {
+    display: block;
+}
+
+.desktop-buttons-right {
+    display: none;
+}
+
+.side-left, .side-right {
+    text-align: center;
+    align-self: center;
+}
 
 @media (min-width: 768px) {
-    .credit {
+    .slick-initialized .slick-slide {
         display: flex;
+        margin: 24px;
+    }
+
+    .slick-slider {
+        width: 520px !important;
+    }
+    
+    .side-left {
+        text-align: left;
+    }
+
+    .side-right {
+        text-align: right;
+    }
+    .mobile-buttons-right {
+        display: none;
+    }
+    
+    .desktop-buttons-right {
+        display: block;
+    }
+
+    .modal-body {
+        padding: 0 24px 24px;
+    }
+
+    .credit {
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 528px;
+        margin: 12px auto;
     }
 
     .left {
         text-align: left;
         display: flex;
-        margin: 0 auto;
         flex: 1;
         
         img {
@@ -103,7 +182,6 @@
     .right {
         text-align: right;
         display: flex;
-        margin: 0 auto;
         flex: 1;
 
         img {
@@ -119,15 +197,18 @@
 
     .mobile-button {
         display: block;
-        width: 100%;
-        margin: 50px;      
+        width: 150px !important;
+        margin: 0 auto;
     }
 
     .buttons-right {
         display: block;
-        margin-top: 7%;
-        margin-right: 10%;
+        align-self: center;
+        text-align: center;
+    }
 
+    .work-heading {
+        text-align: center;
     }
 
     .left {
@@ -171,45 +252,36 @@
         justify-content: space-evenly;
         margin: 0 auto;  
 
-        img {
+        img:not(.musicplay-ca-screenshots) {
             padding: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .musicplay-ca-screenshots {
+            padding: 10px;
+            width: auto;
+            height: 179px;
         }
     }
 
-    .work-title-left-1 {
-        transform: translate(132%, 10px);
+    .work-title-desktop {
+        display: block;
     }
 
-    .work-title-left-5 {
-        transform: translate(108%, 10px);
-    }
-
-    .work-title-left-3 {
-        transform: translate(100%, -20px);
-        text-align: center;
-    }
-
-    .work-title-left-7 {
-        transform: translate(137%, 10px);
-    }
-
-    .work-title-right-2, .work-title-right-6 {
-        transform: translate(-95%, 10px);
-    }
-
-    .work-title-right-4 {
-        transform: translate(-80%, 10px);
+    .work-title-mobile {
+        display: none;
     }
 
     .modal {
-        h2, h3, .credit {
+        h2, h3 {
             text-align: center;
         }
         
     }
 
     .row-1 {
-        display: flex;
+        display: block;
         margin: 0 auto;
     }
 
@@ -221,30 +293,24 @@
         margin-top: 10%;
     }
 
-    .work-title-left-1 {
-        transform: translate(115%, 20px);
+    .left, .right {
+        width: 720px;
+        margin: 32px auto;
     }
 
-    .work-title-right-2, .work-title-right-6 {
-        transform: translate(-103%, 40px);
+    .slick-slider {
+        width: 739px !important;
     }
 
-    .work-title-left-7 {
-        transform: translate(117%, 10px);
+    .modal-content {
+        width: 820px;
+        height: 510px;
     }
-
-    .work-title-right-4 {
-        transform: translate(-95%, 40px);
-    }
-
-    .work-title-left-5 {
-        transform: translate(105%, 20px);
-    }
-
-    .work-title-left-3 {
-        transform: translate(75%, 20px);
-        text-align: center;
-    }
-
 }
 
+@media (min-width: 1400px) {
+    .slick-slider {
+        width: 900px !important;
+        // margin: 0 auto;
+    }
+}

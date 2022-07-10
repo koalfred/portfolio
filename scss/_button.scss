@@ -3,12 +3,12 @@ button {
     border: none;
     background-color: $color;
     color: white;
-    width: 50%;
+    width: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 10px;
+    margin: 0px;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 .lower-buttons {
@@ -20,11 +20,21 @@ button {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .side-left, .side-right {
+        margin-bottom: 32px;
+    }
+}
+
 @media (min-width: 768px) {
     button:not(.mobile-button) {
         width: 20%;
         margin: 10px auto;
     }
 
-    
+    button {
+        margin: 10px;
+        width: 150px;
+        font-size: 18px;
+    }
 }

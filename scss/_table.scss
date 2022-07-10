@@ -1,13 +1,19 @@
 table {
-    margin: 0 auto;
     border: 3px solid $color;
     border-collapse: collapse;
+    width: 100%;
+}
+
+.table-flex {
+    margin: 24px auto;
+    max-width: 400px;
 }
 
 th {
     background-color: $color;
     color: white;
     padding: 10px;
+    height: 10px;
 }
 
 td {
@@ -18,5 +24,14 @@ td {
 @media (min-width: 768px) {
     table {
         width: 50%;
+    }
+
+    .flexed-tables {
+        display: flex;
+
+        .table-flex {
+            margin: 24px;
+            max-width: 600px;
+        }
     }
 }
