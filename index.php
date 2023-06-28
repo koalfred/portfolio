@@ -18,7 +18,7 @@
     <title>Alfred Ko's Portfolio</title>
     <link rel='icon' href='favicon/favicon-32x32.png' type='image/ico'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="6h1rZsCLYJdK0MWDZPhxp-QXCOjzc5EE176cVqcM2iM" />
   </head>
@@ -29,7 +29,7 @@
           <h1>I am</h1>
           <img src="images/avatar.png" alt="avatar" class="avatar">
           <h1>Alfred Ko</h1>
-          <p class="introductory-text">Hello! My name is Alfred Ko and I am a Canada-based front-end web developer. Welcome to my portfolio, and I look forward to working with you!</p>
+          <p class="introductory-text">Hello! My name is Alfred Ko and I am a Canada-based front-end web developer and aspiring data analyst. Welcome to my portfolio, and I look forward to working with you!</p>
         </div>
         <?php include("includes/footer.php"); ?>
       </div>

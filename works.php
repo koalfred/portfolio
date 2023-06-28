@@ -18,8 +18,9 @@
     <title>My Works</title>
     <link rel='icon' href='favicon/favicon-32x32.png' type='image/ico'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="6h1rZsCLYJdK0MWDZPhxp-QXCOjzc5EE176cVqcM2iM" />
 </head>
@@ -27,7 +28,7 @@
   <?php include("includes/nav.php"); ?>
   <div class="main_body">
     <div class="works-wrapper">
-      <h1>Recent Works</h1>
+      <h1>Recent Web Development Works</h1>
       <div class="slick-items">
         <?php include('includes/works/rows/row_9.php'); ?>
         <?php include('includes/works/rows/row_8.php'); ?>
@@ -56,9 +57,9 @@
     <?php include('includes/works/modals/modal_6.php'); ?>
   </div>
   <?php include("includes/footer.php"); ?>
-<!-- </div> -->
-  <?php include("includes/loading.php"); ?>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="scripts/scripts.js"></script>
+</div>
+<?php include("includes/loading.php"); ?>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
