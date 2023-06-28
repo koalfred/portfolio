@@ -1,9 +1,14 @@
+html {
+    min-width: 320px;
+}
+
 body {
     text-align: center;
     padding: 16px;
 }
 
 .main_body {
+    // display: none;
     animation: fadeIn 0.2s ease-in-out;
 }
 
@@ -14,6 +19,26 @@ body {
 
     100% {
         opacity: 100%;
+    }
+}
+
+.loading {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: rgb(245, 200, 245);
+    }
+
+    100% {
+        color: rgb(102, 2, 102);
     }
 }
 
@@ -51,11 +76,5 @@ p {
 @media (min-width: 1000px) {
     .loading {
         font-size: 32px;
-    }
-}
-
-@media (min-width: 1200px){
-    .wrapper {
-        width: 1000px;
     }
 }
