@@ -38,11 +38,14 @@
     margin: 16px;
   }
 
-  i.fa.fa-angle-left.slick-arrow, i.fa.fa-angle-right.slick-arrow {
+  i.fas.fa-arrow-left.slick-arrow, i.fas.fa-arrow-right.slick-arrow {
     font-size: 28px;
-    font-weight: 900;
     align-self: center;
     color: $color;
+  }
+
+  .fa-arrow-right:before, .fa-arrow-left:before {
+    display: none
   }
 
   @keyframes slideDown {
@@ -222,6 +225,7 @@
     }
     
     .row-1, .row-4 {
+        display: flex;
         justify-content: space-evenly;
         margin: 0 auto;
         

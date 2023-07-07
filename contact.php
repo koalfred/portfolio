@@ -19,7 +19,7 @@
     <title>Contact</title>
     <link rel='icon' href='favicon/favicon-32x32.png' type='image/ico'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="scss/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
     <meta name="google-site-verification" content="6h1rZsCLYJdK0MWDZPhxp-QXCOjzc5EE176cVqcM2iM" />
   </head>
@@ -58,14 +58,7 @@
             <div class="contact-info">
                 <h2>Further Contact</h2>
                 <p>alfred.frontend@gmail.com</p>
-                <div class="social-media-icons">
-                    <a href="https://twitter.com/alfredjihoon" id="twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/alfred-ko-440079b9/" id="linkedin">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </div>
+                <li class="fa social_media_list"><a href="https://twitter.com/alfredjihoon" class="fa fa-twitter" id="twitter"></a><a href="https://www.linkedin.com/in/alfred-ko-440079b9/" class="fa fa-linkedin" id="linkedin"></a></li>
             </div>
         </div>
         <?php include("includes/footer.php"); ?>

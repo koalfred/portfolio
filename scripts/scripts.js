@@ -33,12 +33,27 @@ window.onclick = function(event) {
     }
 }
 
+var main_body = document.querySelector('.main_body');
+var loading = document.querySelector('.loading');
+
+// setTimeout(mainPage, 1500);
+
+// function mainPage() {
+//   main_body.style.display = "block";
+//   loading.style.display = "none";
+// }
+
 jQuery('.slick-items').slick({
-  prevArrow: '<i class="fa fa-angle-left"></i>',
-  nextArrow: '<i class="fa fa-angle-right"></i>',
+  prevArrow: '<i class="fas fa-arrow-left">&#8592</i>',
+  nextArrow: '<i class="fas fa-arrow-right">&#8594</i>',
 });
 
 jQuery('.slick-items-2').slick({
-  prevArrow: '<i class="fa fa-angle-left"></i>',
-  nextArrow: '<i class="fa fa-angle-right"></i>',
+  prevArrow: '<i class="fas fa-arrow-left">&#8592</i>',
+  nextArrow: '<i class="fas fa-arrow-right">&#8594</i>',
+});
+
+jQuery('.slick-items-3').slick({
+  prevArrow: '<i class="fas fa-arrow-left">&#8592</i>',
+  nextArrow: '<i class="fas fa-arrow-right">&#8594</i>',
 });
