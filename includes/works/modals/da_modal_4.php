@@ -1,4 +1,4 @@
-<div id="data_modal_5" class="modal">
+<div id="da_modal_5" class="modal">
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">×</span>
@@ -7,8 +7,8 @@
     <div class="modal-body">
       <h3>Screenshots</h3>
       <div class="screenshots">
-        <img src="images/petshelteranalysis-2.png" alt="Pet Shelter Analysis">
-        <img src="images/petshelteranalysis-3.png" alt="Pet Shelter Analysis">
+        <img src="images/petshelteranalysis-2.jpg" alt="Pet Shelter Analysis">
+        <img src="images/petshelteranalysis-3.jpg" alt="Pet Shelter Analysis">
       </div>
       <div class="row-1">
         <div class="row-1-1">

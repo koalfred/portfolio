@@ -1,4 +1,4 @@
-<div id="data_modal_8" class="modal">
+<div id="da_modal_8" class="modal">
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">×</span>
@@ -31,7 +31,7 @@
         <button onclick="window.location.href = 'https://github.com/koalfred/movieapianalysis';">GitHub</button>
       </div>
       <div class="github">
-        <button onclick="window.location.href = 'https://docs.google.com/presentation/d/1g2XU2kvIP0S-nVrPWPSWd4_JDtnzXVuSU4P4TObLr00/';">Google Slides Presentation</button>
+        <button onclick="window.location.href = 'https://docs.google.com/presentation/d/1g2XU2kvIP0S-nVrPWPSWd4_JDtnzXVuSU4P4TObLr00/';">Presentation</button>
       </div>
     </div>
   </div>

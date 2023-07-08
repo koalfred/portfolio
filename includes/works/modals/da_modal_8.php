@@ -7,8 +7,8 @@
     <div class="modal-body">
       <h3>Screenshots</h3>
       <div class="screenshots">
-        <img src="images/numbergame-2" alt="Number Game">
-        <img src="images/numbergame-3" alt="Number Game">
+        <img src="images/numbergame-2.jpg" alt="Number Game">
+        <img src="images/numbergame-3.jpg" alt="Number Game">
       </div>
       <div class="row-1">
         <div class="row-1-1">

@@ -12,7 +12,7 @@
     </div>
     </div> 
     <div class="side-right">
-    <img src="images/numbergame.png" alt="Number Guessing Game">
+    <img src="images/numbergame.jpg" alt="Number Guessing Game">
     </div>
     <div class="mobile-buttons mobile-buttons-right">
         <a href="https://github.com/koalfred/numbergame">

@@ -1,4 +1,4 @@
-<div id="data_modal_6" class="modal">
+<div id="da_modal_6" class="modal">
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">×</span>
