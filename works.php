@@ -49,6 +49,13 @@
       <?php include('includes/works/modals/da_modal_8.php'); ?>
     </div>
     <div class="works-wrapper">
+      <h1>Personal Data Analysis Projects</h1>
+      <div class="slick-items-4">
+        <?php include('includes/works/rows/pp_da_1.php'); ?>
+      </div>
+      <?php include('includes/works/modals/pp_da_modal_1.php'); ?>
+    </div>
+    <div class="works-wrapper">
       <h1>Recent Web Development Works</h1>
       <div class="slick-items">
         <?php include('includes/works/rows/row_9.php'); ?>

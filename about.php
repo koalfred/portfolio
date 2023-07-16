@@ -73,6 +73,9 @@
                             <td>Jupyter Notebook</td>
                         </tr>
                         <tr>
+                            <td>Pygal</td>
+                        </tr>
+                        <tr>
                             <td>Seaborn</td>
                         </tr>
                         <tr>

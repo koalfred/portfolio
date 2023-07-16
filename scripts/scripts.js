@@ -57,3 +57,8 @@ jQuery('.slick-items-3').slick({
   prevArrow: '<i class="fas fa-arrow-left">&#8592</i>',
   nextArrow: '<i class="fas fa-arrow-right">&#8594</i>',
 });
+
+jQuery('.slick-items-4').slick({
+  prevArrow: '<i class="fas fa-arrow-left">&#8592</i>',
+  nextArrow: '<i class="fas fa-arrow-right">&#8594</i>',
+});
